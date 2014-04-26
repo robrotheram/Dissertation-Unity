@@ -1,0 +1,96 @@
+fileFormatVersion: 2
+guid: 501832940846845839226815a560ab52
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: faraday_faraday_material_0.005
+    100004: Fulton_Fulton_material_0.001
+    100006: kh-ed_kh-ed_material_0.004
+    100008: lib2mesh-com_lib2mesh-com_material_0.011
+    100010: lib2mesh-edit_lib2mesh-edit_material_0.012
+    100012: tal-edit_tal-edit_material_0.002
+    100014: TECH-EDIT_TECH-EDIT_material_0.003
+    400000: //RootNode
+    400002: faraday_faraday_material_0.005
+    400004: Fulton_Fulton_material_0.001
+    400006: kh-ed_kh-ed_material_0.004
+    400008: lib2mesh-com_lib2mesh-com_material_0.011
+    400010: lib2mesh-edit_lib2mesh-edit_material_0.012
+    400012: tal-edit_tal-edit_material_0.002
+    400014: TECH-EDIT_TECH-EDIT_material_0.003
+    2300000: faraday_faraday_material_0.005
+    2300002: Fulton_Fulton_material_0.001
+    2300004: kh-ed_kh-ed_material_0.004
+    2300006: lib2mesh-com_lib2mesh-com_material_0.011
+    2300008: lib2mesh-edit_lib2mesh-edit_material_0.012
+    2300010: tal-edit_tal-edit_material_0.002
+    2300012: TECH-EDIT_TECH-EDIT_material_0.003
+    3300000: faraday_faraday_material_0.005
+    3300002: Fulton_Fulton_material_0.001
+    3300004: kh-ed_kh-ed_material_0.004
+    3300006: lib2mesh-com_lib2mesh-com_material_0.011
+    3300008: lib2mesh-edit_lib2mesh-edit_material_0.012
+    3300010: tal-edit_tal-edit_material_0.002
+    3300012: TECH-EDIT_TECH-EDIT_material_0.003
+    4300000: faraday_faraday_material_0.005
+    4300002: Fulton_Fulton_material_0.001
+    4300004: kh-ed_kh-ed_material_0.004
+    4300006: lib2mesh-com_lib2mesh-com_material_0.011
+    4300008: lib2mesh-edit_lib2mesh-edit_material_0.012
+    4300010: tal-edit_tal-edit_material_0.002
+    4300012: TECH-EDIT_TECH-EDIT_material_0.003
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 

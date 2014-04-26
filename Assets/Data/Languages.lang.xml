@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <lang>
+        <languageName>English</languageName>
+        <title>Swansea University</title>
+        <adminButtonText>Add a Place</adminButtonText>
+        <mapButtonText>Show Map</mapButtonText>
+        <listButtonText>Show Place List</listButtonText>
+        <okButtonText>Ok</okButtonText>
+        <cancelButtonText>Cancel</cancelButtonText>
+        <DescriptionButtonText>Welcome To v0.8 </DescriptionButtonText>
+        <DescriptionLine2ButtonText>To Begin Click the show Place button</DescriptionLine2ButtonText>
+        <DescriptionLine3ButtonText>Stuff</DescriptionLine3ButtonText>
+    </lang>
+</root>
+

@@ -1,0 +1,75 @@
+<root>
+    <place>
+        <placeName>Library</placeName>
+        <placeDesc>Place to do research</placeDesc>
+        <xcordinate>-144.7875</xcordinate> 
+        <ycordinate> 2.011348</ycordinate>  
+        <zcordinate>22.18915</zcordinate>
+    </place>
+    <place>
+        <placeName>Law Library</placeName>
+        <placeDesc>Dedicated Library that holds Law records and Documentation</placeDesc>
+        <xcordinate>-184.4285</xcordinate> 
+        <ycordinate> 2.011348</ycordinate>  
+        <zcordinate>40</zcordinate>
+    </place>
+    <place>
+        <placeName>Faraday</placeName>
+        <placeDesc>Home to Engineering, Computer Science</placeDesc>
+        <xcordinate>3.88315</xcordinate> 
+        <ycordinate> 1.10189</ycordinate> 
+         <zcordinate>25.40144</zcordinate>
+        <departmentList>
+            <department>Computer Science</department>
+            <department>Engineering</department>
+            <department>Mathematics</department>
+        </departmentList>
+    </place>
+    <place>
+        <placeName>Fulton</placeName>
+        <placeDesc>Centre of Food Drink and Students Union</placeDesc>
+      <xcordinate>94.80222</xcordinate> 
+        <ycordinate>1.988564</ycordinate>  
+        <zcordinate>4.399117</zcordinate>
+    </place>
+    <place>
+        <placeName>Technium</placeName>
+        <placeDesc>Home to Engineering and Computer Science labs</placeDesc>
+        <xcordinate>10.22207</xcordinate> 
+        <ycordinate>1.381492</ycordinate>  
+        <zcordinate>-4.915409</zcordinate>
+    </place>
+    <place>
+        <placeName>Taliesin</placeName>
+        <placeDesc>Centre for Art and Culture at Swansea University. </placeDesc>
+        <xcordinate>-56.56583</xcordinate> 
+        <ycordinate> 1.750317</ycordinate>  
+        <zcordinate>2.807775</zcordinate>
+    </place>
+    
+    <place>
+        <placeName>Kehir Hardy</placeName>
+        <placeDesc>Home to Language and Humanities Departments</placeDesc>
+        <xcordinate>-172.7298</xcordinate> 
+        <ycordinate> 1.930106</ycordinate>  
+        <zcordinate>7.663496</zcordinate>
+        <departmentList>
+            <department>English</department>
+            <department>French</department>
+            <department>German</department>
+            <department>Italian</department>
+            <department>Germany</department>
+            <department>Media</department>
+            <department>Communication Studies</department>
+            <department>Politics</department>
+            <department>International Relations</department>
+            <department>American Studies</department>
+            <department>Classics</department>
+            <department>Ancient History</department>
+            <department>Egyptology</department>
+            <department>War and Society</department>
+            
+        </departmentList>
+    </place>
+</root>
+

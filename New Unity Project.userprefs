@@ -1,0 +1,15 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Follow.cs">
+    <Files>
+      <File FileName="Assets/Scripts/GUI/Fotter.cs" Line="41" Column="97" />
+      <File FileName="Assets/Scripts/GUI/MainGUI.cs" Line="115" Column="79" />
+      <File FileName="Assets/Data/Data.xml" Line="8" Column="13" />
+      <File FileName="Assets/Scripts/Follow.cs" Line="46" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
