@@ -12,22 +12,28 @@ public class MainGUI : MonoBehaviour {
 	public static rootPlace[] items;
 	public Rect Box;
 	public string slectedItem = "None";
+	private string oldslectedItem = "None";
 	private  Vector2 scrollPosition;
 	public TextAsset GameAsset;
 	private static bool message =true;
 	private static string messages = "Hello, my name is Jeff and I will give you a tour around the campus. All you need to do is click on the location button below, select a location and click ok. Then I will take you there.";
 	private static string title = "Welecome";
+	private string department = "Search for department";
+	private string oldText = "";
+	public string initialText = "";
 	private bool editing = false;
 
 	// Use this for initialization
 	void Start () {
-
+		department = initialText;
+		oldslectedItem = slectedItem;
 		GameObject aboveCam = GameObject.Find("AboveCam");
+
 		aboveCam.SetActive (false);
 		GameObject master = GameObject.Find("master");
 		master.SetActive(false);
 
-		windowRectangle = new Rect(Screen.width/2-200,Screen.height/2-80,400,160);
+		windowRectangle = new Rect(Screen.width/2-200,Screen.height/2-100,400,200);
 		messageRectangle = new Rect(Screen.width/2-200,Screen.height/2-80,400,160);
 
 		XMLReader xml = new XMLReader (GameAsset);
@@ -56,6 +62,11 @@ public class MainGUI : MonoBehaviour {
 
 			}
 		}
+		if (!department.Equals(oldText)) {
+			Debug.Log("========= Change ======="); 
+			oldText = department;
+		}
+
 	}
 
 	private void waiting(){
@@ -68,10 +79,11 @@ public class MainGUI : MonoBehaviour {
 
 				}
 		if (paused) {
-			windowRectangle = GUI.Window(1,windowRectangle,windowFunc,"Paused");			
+			windowRectangle = GUI.Window(1,windowRectangle,windowFunc,"Navigation Menu");			
 		}
 	}
 	private void windowFunc(int id){
+		department = GUILayout.TextField(department, 25);
 		if (GUILayout.Button(slectedItem))
 		{
 			editing = true;
@@ -85,15 +97,31 @@ public class MainGUI : MonoBehaviour {
 		}
 		if (editing)
 		{
-			scrollPosition = GUILayout.BeginScrollView (
-				scrollPosition, GUILayout.Width (Box.width), GUILayout.Height (80));
+
+			scrollPosition = GUILayout.BeginScrollView (scrollPosition, GUILayout.Width (Box.width), GUILayout.Height (80));
 
 			for (int x = 0; x < items.Length; x++)
 			{
-				if (GUILayout.Button(items[x].placeName))
-				{
-					slectedItem = items[x].placeName;
-					editing = false;
+				if((department.Equals(""))||(department.Equals(initialText))){
+					if (GUILayout.Button(items[x].placeName))
+					{
+						slectedItem = items[x].placeName;
+						editing = false;
+					}
+				}else{
+					rootPlaceDepartmentListDepartment[] deptList= items[x].departmentList;
+					if(deptList!=null){
+					for (int y =0; y<deptList.Length;y++){
+						if(deptList[y].Value.ToLower().Contains(department.ToLower())){
+								if (GUILayout.Button(items[x].placeName))
+								{
+									slectedItem = items[x].placeName;
+									editing = false;
+								}
+						
+						}
+					}
+					}
 				}
 			}
 			GUILayout.EndScrollView();
@@ -102,6 +130,9 @@ public class MainGUI : MonoBehaviour {
 		GUILayout.BeginHorizontal ();
 		if (GUILayout.Button("Ok"))
 		{
+			department = initialText;
+
+			clickAndDrag.isenabled = true;
 			for (int i = 0; i < items.Length; i++)
 			{
 				rootPlace element  = items[i];
@@ -113,16 +144,26 @@ public class MainGUI : MonoBehaviour {
 					z = float.Parse(element.zcordinate);
 
 					Follow.updateLocation(new Vector3(x,y,z), element.placeDesc,slectedItem);
+
 				}
 			}
 			paused = false;
+			slectedItem = oldslectedItem;
+			editing = false;
 		}
 		if (GUILayout.Button("Canel"))
 		{
+			department = initialText;
+			slectedItem = oldslectedItem;
+			editing = false;
+			clickAndDrag.isenabled = true;
 			paused = false;
 		}
 		if (GUILayout.Button("Quit"))
 		{
+			department = initialText;
+			clickAndDrag.isenabled = true;
+			editing = false;
 			Application.Quit();
 		}
 		GUILayout.EndHorizontal ();
@@ -150,6 +191,7 @@ public class MainGUI : MonoBehaviour {
 	private void beginMessage(int id ){
 		GUILayout.Label (messages);
 		if (GUILayout.Button ("Ok")) {
+			clickAndDrag.isenabled = true;
 			GameObject thisCam = GameObject.Find("MainCamera");
 			GameObject followCam = GameObject.Find("FollowCam");
 			GameObject aboveCam = GameObject.Find("AboveCam");

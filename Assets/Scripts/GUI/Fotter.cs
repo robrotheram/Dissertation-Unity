@@ -65,7 +65,9 @@ public class Fotter : MonoBehaviour {
 				
 		}
 		if (GUILayout.Button ("Show Menu")) {
+			clickAndDrag.isenabled = false;
 			MainGUI.enableMenu();
+
 		}
 
 
